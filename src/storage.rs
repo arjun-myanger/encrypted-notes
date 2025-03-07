@@ -17,7 +17,7 @@ impl Storage {
 
     pub fn save_note(&self, note: &str) -> String {
         let id: String = rand::thread_rng()
-            .sample_iter(&Alphanumeric) // ✅ Make sure this line uses Alphanumeric
+            .sample_iter(&Alphanumeric)
             .take(8)
             .map(char::from)
             .collect();
