@@ -20,7 +20,7 @@ Currently, this app **only works on the same machine**. This means:
 - Notes **cannot be shared** with someone on another device or location.
 - **All stored messages exist only on your local system.**
 
-🔹 **To make it work globally, we would need to:**
+🔹 **To make it work globally, you would need to:**
 1. **Deploy the API online** (e.g., AWS, DigitalOcean, Railway.app).
 2. **Use a remote database** instead of local storage (`db/` folder).
 3. **Expose a real URL** so anyone can create & read notes remotely.
