@@ -10,6 +10,22 @@ A secure **Rust-based encrypted notes** application that allows users to create 
 ✅ **One-Time Read (Self-Destructing Notes)** - Once a note is read, it is permanently deleted.  
 ✅ **CLI & API Support** - Use it via command line or integrate it into web applications.  
 ✅ **Rust-powered Security** - Built using Rust’s strong type safety and performance benefits.  
+✅ **Local-Only Storage** - Messages are currently stored **only on the same machine**.  
+
+---
+
+## ⚠️ **Current Limitations: Local-Only Usage**
+Currently, this app **only works on the same machine**. This means:
+- The **API is not exposed to the internet** (`127.0.0.1:3030` is only accessible locally).
+- Notes **cannot be shared** with someone on another device or location.
+- **All stored messages exist only on your local system.**
+
+🔹 **To make it work globally, we would need to:**
+1. **Deploy the API online** (e.g., AWS, DigitalOcean, Railway.app).
+2. **Use a remote database** instead of local storage (`db/` folder).
+3. **Expose a real URL** so anyone can create & read notes remotely.
+
+📌 **This version is great for personal use or local secure notes!** 🔒
 
 ---
 
